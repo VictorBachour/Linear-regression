@@ -41,6 +41,7 @@ print(f'Mean Squared Error: {mse:.4f}')
 print(f'R² Score: {r2:.4f}')
 
 plt.scatter(y_test, y_pred, alpha=.5)
+plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red', linestyle='dashed')
 plt.xlabel("Actual Prices")
 plt.ylabel("Predicted prices")
 plt.title("Actual vs Predicted Prices")
